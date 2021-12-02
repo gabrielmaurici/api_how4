@@ -27,12 +27,6 @@ namespace Api.ControllersEditarJogo
             return repository.Read();
         }
 
-        [HttpGet("BuscarJogoPorId/{id}")]
-        public Jogo BuscarJogoPorId(int id)
-        {
-            return repository.Read(id);
-        }
-
         [HttpPut("EditarJogo")]
         public void EditarJogo([FromBody] Jogo model)
         {
